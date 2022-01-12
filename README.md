@@ -23,6 +23,8 @@ O currículo da Trybe foi desenhado em parceria com as maiores empresas de tecno
 
 # Sumário
 
+- [Habilidades desenvolvidas](#habilidades-desenvolvidas)
+- [Tecnologias utilizadas](#tecnologias-utilizadas)
 - [Requisitos do projeto](#requisitos-do-projeto)
     - [Tela de início/login](#tela-de-iníciologin)
       - [1. Crie a tela de login, onde a pessoa que joga deve preencher as informações para iniciar um jogo](#1-crie-a-tela-de-login-onde-a-pessoa-que-joga-deve-preencher-as-informações-para-iniciar-um-jogo)
