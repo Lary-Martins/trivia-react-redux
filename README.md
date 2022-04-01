@@ -76,12 +76,12 @@ O currículo da Trybe foi desenhado em parceria com as maiores empresas de tecno
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [React.js](https://pt-br.reactjs.org/)
 - [Redux](https://redux.js.org/)
-- 
+
 ## Para organização:
 - [Kanban](https://pt.wikipedia.org/wiki/Kanban)
 - [Scrum](https://pt.wikipedia.org/wiki/Scrum)
 - [Trello](https://trello.com/)
-- 
+
 ## Para comunicação:
 - [Discord](https://discord.com/)
 
