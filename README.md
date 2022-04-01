@@ -1,6 +1,6 @@
 # Projeto Trivia React Redux
 
-Projeto desenvolvido durante o Curso de Desenvolvimento WEB, Turma 12, da [trybe](https://www.betrybe.com/), onde desenvolvi minhas habilidades em JavaScript, React.js, Redux, Metologias Ágeis, Scrum, Kanban e muita softs skills, na criação de uma pagina de um jogo de trivia.
+Projeto desenvolvido durante o Curso de Desenvolvimento WEB, Turma 12, da [trybe](https://www.betrybe.com/), onde desenvolvi minhas habilidades em JavaScript, React.js, Redux, Metologias Ágeis, Scrum, Kanban e muitas softs skills, na criação de uma pagina de um jogo de trivia.
 
 Obs.: Projeto desenvolvido em Grupo.
 
@@ -73,19 +73,16 @@ O currículo da Trybe foi desenhado em parceria com as maiores empresas de tecno
 # Tecnologias utilizadas
 
 ## Para desenvolvimento:
-
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [React.js](https://pt-br.reactjs.org/)
 - [Redux](https://redux.js.org/)
 - 
 ## Para organização:
-
 - [Kanban](https://pt.wikipedia.org/wiki/Kanban)
 - [Scrum](https://pt.wikipedia.org/wiki/Scrum)
 - [Trello](https://trello.com/)
 - 
 ## Para comunicação:
-
 - [Discord](https://discord.com/)
 
 ---
