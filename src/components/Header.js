@@ -15,8 +15,8 @@ class Header extends React.Component {
     return (
       <header>
         <img data-testid="header-profile-picture" src={ SRC } alt="Player avatar" />
-        <h2 data-testid="header-player-name">{ `User: ${user}` }</h2>
-        <h3 data-testid="header-score">{ score }</h3>
+        <h2 data-testid="header-player-name">Player: {user }</h2>
+        <h3 data-testid="header-score">Pontuação: { score }</h3>
       </header>
     );
   }
