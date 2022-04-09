@@ -1,0 +1,14 @@
+.clock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock h2 {
+  padding-left: 25px;
+}
+.clock img {
+  width: 70px;
+  height: 70px;
+}
