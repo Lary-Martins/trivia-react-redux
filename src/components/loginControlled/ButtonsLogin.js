@@ -44,12 +44,10 @@ ButtonsLogin.propTypes = {
   handleClick1: func.isRequired,
   handleClick2: func.isRequired,
   handleClick3: func.isRequired,
-  // className: string,
 };
 
 ButtonsLogin.defaultProps = {
   disabled: false,
-  // className: '',
 };
 
 export default ButtonsLogin;
