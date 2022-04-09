@@ -12,6 +12,8 @@ class ButtonNext extends React.Component {
           <Button
             testId="btn-next"
             name="Próxima"
+            style={{margin: "0px 100px 110px 0px"}}
+            className="nxt-button"
             handleClick={ handleClick }
           />
         )
