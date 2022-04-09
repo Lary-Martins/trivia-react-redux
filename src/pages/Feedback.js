@@ -72,28 +72,27 @@ class Feedback extends React.Component {
       <>
         { redirectRanking && <Redirect to="/ranking" />}
         { stateRedirect && <Redirect to="/" /> }
-        <Header score={ score } />
-        <Button
-          name="Jogar novamente"
-          testId="btn-play-again"
-          handleClick={ redirectToLogin }
-        />
-        <Button
-          name="Ver Ranking"
-          testId="btn-ranking"
-          handleClick={ handleClickRanking }
-        />
+        <Header score={ score }/>
+        <p data-testid="feedback-total-question">
+          Acertos: {assertions}
+        </p>
         <h2 data-testid="feedback-text">
           {
             (assertions < ASSERTION_AVERAGE ? 'Podia ser melhor...' : 'Mandou bem!')
           }
         </h2>
-        <p data-testid="feedback-total-score">
-          {score}
-        </p>
-        <p data-testid="feedback-total-question">
-          {assertions}
-        </p>
+        <Button
+          name="Jogar novamente"
+          className="fdb-button config-button"
+          testId="btn-play-again"
+          handleClick={ redirectToLogin }
+        />
+        <Button
+          name="Ver Ranking"
+          className="fdb-button ranking-button"
+          testId="btn-ranking"
+          handleClick={ handleClickRanking }
+        />
       </>
     );
   }
