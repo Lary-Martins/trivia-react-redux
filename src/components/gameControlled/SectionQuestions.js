@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Button from '../Button';
 import { questionsFetchAPI } from '../../redux/actions';
+import '../../css/Button.css';
+import '../../css/QuestionPage.css';
 
 class SectionQuestions extends React.Component {
   constructor() {
@@ -31,13 +33,13 @@ class SectionQuestions extends React.Component {
         answer: correct,
         testid: 'correct-answer',
         handleClick: () => correctClick(difficulty),
-        className: color ? 'correctColor' : null,
+        className: color ? 'correctColor' : 'qst-button',
       },
       ...incorrect.map((answer, index) => ({
         answer,
         testid: `wrong-answer-${index}`,
         handleClick: wrongClick,
-        className: color ? 'wrongColor' : null,
+        className: color ? 'wrongColor' : 'qst-button',
       })),
     ].sort((a, b) => {
       if (a.answer < b.answer) {
@@ -65,9 +67,12 @@ class SectionQuestions extends React.Component {
 
     return (
       <section>
-        <h2>{ count }</h2>
-        <h2 data-testid="question-category">{ category }</h2>
-        <h3 data-testid="question-text">{ question }</h3>
+        <div className='clock'>
+          <img src="cronometro.png" alt="imagem de um cronometro"></img>
+          <h2>{count}</h2>
+        </div>
+        <h2 data-testid="question-category">{category}</h2>
+        <h3 data-testid="question-text">{question}</h3>
         <section>
           {
             this.shuffleAnswers(correctAnswer, incorrectAnswers, difficulty)
