@@ -222,8 +222,8 @@ class Game extends React.Component {
       <>
         { redirect && <Redirect to="/feedback" /> }
         <Header score={ score } />
-        <ButtonNext invisible={ nextButtonInvisible } handleClick={ nextClick } />
         <SectionQuestions
+          classNameDefault= { 'qst-button' }
           questionPosition={ questionPosition }
           correctClick={ correctClick }
           wrongClick={ wrongClick }
@@ -231,6 +231,7 @@ class Game extends React.Component {
           color={ color }
           count={ count }
         />
+        <ButtonNext invisible={ nextButtonInvisible } handleClick={ nextClick } />
       </>
     );
   }
