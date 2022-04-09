@@ -1,6 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import Button from '../components/Button';
+import '../css/CardRanking.css'
 
 class Ranking extends React.Component {
   constructor() {
@@ -38,19 +39,20 @@ class Ranking extends React.Component {
           name="HOME"
           testId="btn-go-home"
           handleClick={ handleClick }
+          className="std-button" 
         />
         <ol>
           {
             stateSort.map((posicao, index) => {
               const { name, score, picture } = posicao;
               return (
-                <li key={ `${score}.${name}.${picture}` }>
+                <li key={ `${score}.${name}.${picture}` } className="card-ranking">
                   <img src={ picture } alt={ `Player avatar ${index}` } />
                   <h3 data-testid={ `player-name-${index}` }>
-                    { name }
+                    Player: { name }
                   </h3>
                   <h4 data-testid={ `player-score-${index}` }>
-                    { score }
+                    Pontuação: { score }
                   </h4>
                 </li>
               );
