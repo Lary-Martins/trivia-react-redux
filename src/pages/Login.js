@@ -18,13 +18,11 @@ class Login extends React.Component {
       user: '',
       email: '',
       redirectGame: false,
-      redirectConfig: false,
       redirectRank: false,
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleClickGame = this.handleClickGame.bind(this);
-    this.handleClickConfig = this.handleClickConfig.bind(this);
     this.handleClickRank = this.handleClickRank.bind(this);
   }
 
@@ -37,13 +35,6 @@ class Login extends React.Component {
     this.setState((state) => ({
       ...state,
       redirectRank: true,
-    }));
-  }
-
-  handleClickConfig() {
-    this.setState((state) => ({
-      ...state,
-      redirectConfig: true,
     }));
   }
 
@@ -74,9 +65,8 @@ class Login extends React.Component {
   }
 
   render() {
-    const { handleChange, handleClickGame, handleClickConfig, handleClickRank,
+    const { handleChange, handleClickGame, handleClickRank,
       state: { user, email, redirectGame,
-        redirectConfig,
         redirectRank,
       } } = this;
     const MAX_LENGTH = 5;
@@ -84,7 +74,6 @@ class Login extends React.Component {
     return (
       <>
         { redirectGame && <Redirect to="/game" /> }
-        { redirectConfig && <Redirect to="/config" /> }
         { redirectRank && <Redirect to="/ranking" /> }
         <img src={ logo } className="App-logo" alt="logo" />
         <form className="login-form">
@@ -98,8 +87,7 @@ class Login extends React.Component {
           <ButtonsLogin
             disabled={ disableCondition }
             handleClick1={ handleClickGame }
-            handleClick2={ handleClickConfig }
-            handleClick3={ handleClickRank }
+            handleClick2={ handleClickRank }
             className="std-button"
           />
         </form>
