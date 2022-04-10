@@ -9,7 +9,6 @@ class ButtonsLogin extends React.Component {
       disabled,
       handleClick1,
       handleClick2,
-      handleClick3,
     },
     } = this;
     return (
@@ -22,15 +21,9 @@ class ButtonsLogin extends React.Component {
           className="std-button enter-button"
         />
         <Button
-          testId="btn-settings"
-          name="Configurações"
-          handleClick={ handleClick2 }
-          className="std-button config-button"
-        />
-        <Button
           testId="btn-ranking"
           name="Ranking"
-          handleClick={ handleClick3 }
+          handleClick={ handleClick2 }
           className="std-button ranking-button"
         />
       </>
@@ -43,7 +36,6 @@ ButtonsLogin.propTypes = {
   disabled: bool,
   handleClick1: func.isRequired,
   handleClick2: func.isRequired,
-  handleClick3: func.isRequired,
 };
 
 ButtonsLogin.defaultProps = {
