@@ -83,7 +83,7 @@ class Feedback extends React.Component {
         </h2>
         <Button
           name="Jogar novamente"
-          className="fdb-button config-button"
+          className="fdb-button start-button"
           testId="btn-play-again"
           handleClick={ redirectToLogin }
         />
