@@ -1,4 +1,6 @@
-# Projeto Jogo Trivia
+<h1>
+ <a href="https://jogo-trivia.vercel.app/"> Jogo do Trivia </a>
+</h1>
 
 Projeto desenvolvido durante o Curso de Desenvolvimento WEB, Turma 12, da [trybe](https://www.betrybe.com/), onde desenvolvi minhas habilidades em JavaScript, React.js, Redux, Metologias Ágeis, Scrum, Kanban e muitas softs skills, na criação de uma pagina de um jogo de trivia.
 
